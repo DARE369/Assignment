@@ -1,0 +1,158 @@
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f4f4f9;
+    overflow-x: hidden;
+}
+h1, h2 {
+    font-family: 'Georgia', serif;
+}
+
+
+header.hero {
+    background: linear-gradient(135deg, #29941b, #04f791);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+}
+header.hero h1 {
+    font-size: 2.5rem;
+    animation: slide-in 1s ease-out;
+}
+header.hero p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    animation: fade-in 1.5s ease-in;
+}
+.cta-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #33f15d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    animation: pop-in 2s ease;
+    transition: transform 0.3s ease;
+}
+.cta-button:hover {
+    transform: scale(1.1);
+}
+
+
+@keyframes slide-in {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes pop-in {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+.mission {
+    text-align: center;
+    padding: 50px 20px;
+    margin-bottom: 40px;
+    background: #dfe6e9;
+    border-radius: 10px;
+    animation: fade-in 2s ease;
+}
+.mission h2 {
+    color: #6c5ce7;
+    font-size: 1.8rem;
+}
+.mission p {
+    margin-top: 10px;
+    color: #333;
+}
+
+
+.popular-authors {
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    margin: 40px 0;
+}
+.popular-authors h2 {
+    text-align: center;
+    color: #0984e3;
+}
+.popular-authors ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+.popular-authors ul li {
+    background: white;
+    padding: 10px 15px;
+    border: 1px solid #b2bec3;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    animation: pop-in 1s ease;
+}
+
+
+.testimonials {
+    background: #88f0b0;
+    padding: 30px 20px;
+    border-radius: 10px;
+    margin: 40px 0;
+}
+.testimonials h2 {
+    text-align: center;
+    color: #2d3436;
+}
+.testimonials .testimonial {
+    margin-top: 20px;
+    font-style: italic;
+    text-align: center;
+    color: #2d3436;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s, transform 1s;
+}
+.testimonials .testimonial.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.footer {
+    background: #2d3436;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9rem;
+}
+.footer span {
+    color: #56c747;
+}
